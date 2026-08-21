@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html,
+body,
+#root {
   margin: 0;
+  height: 100%;
+}
+
+/* Keep number inputs / color pickers tidy across browsers */
+input[type='color'] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type='color']::-webkit-color-swatch {
+  border: none;
+  border-radius: 4px;
 }
